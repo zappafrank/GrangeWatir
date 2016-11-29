@@ -9,19 +9,19 @@ class SouthwestHome
   text_field(:arrival, id: 'air-city-arrival')
   button(:search, id: 'jb-booking-form-submit-button')
 
-  def SetDeparture(city1)
+  def set_departure(city1)
     self.departure = city1
   end
 
-  def SetArrival(city2)
+  def set_arrival(city2)
     self.arrival = city2
   end
 
-  def CarouselEnabled
+  def carousel_enabled
     @browser.lis(class: 'carouselEnabledSodaIneligible')
   end
 
-  def CarouselTodayEnabled
+  def carousel_today_enabled
     @browser.lis(class: 'carouselTodaySodaIneligible')
   end
 
