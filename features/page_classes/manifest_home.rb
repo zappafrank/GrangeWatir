@@ -6,19 +6,19 @@ class ManifestHome
 
   page_url 'manifestcorp.com/opportunities/all-opportunities/'
 
-  def SetCity
+  def set_city
     @browser.select_list(name: 'opportunity_loc').select('Columbus, OH')
   end
 
-  def CityLocList
+  def city_loc_list
     @browser.divs(class: 'opp-loc')
   end
 
-  def SetJobType
+  def set_job_type
     @browser.select_list(name: 'opportunity_type').select('Contract')
   end
 
-  def OppTypeList
+  def opp_type_list
     @browser.divs(class: 'opp-type')
   end
 
